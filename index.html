@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Currency Converter | Convert Currencies with Exfor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li class="burger">
+          <a href="#">
+            <div class="burger-div"></div>
+            <div class="burger-div"></div>
+            <div class="burger-div"></div>
+          </a>
+        </li>
+        <li class="logo">
+          <a href="#">
+            <span class="logo-part-1">ex</span
+            ><span class="logo-part-2">for</span>
+          </a>
+        </li>
+        <li><button class="log-in-btn">Log in</button></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>The cheapest, fastest way to buy foreign currency.</h1>
+      <p>Enter an amount and currency below to convert it.</p>
+      <div class="currency-one">
+        <input
+          type="text"
+          id="currency-one-value"
+          placeholder="0"
+          min="0.01"
+          value="1"
+        />
+        <select id="currency-one-symbol">
+          <option value="USD" selected>USD</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+          <option value="GBP">GBP</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+        </select>
+      </div>
+      <div class="currency-two">
+        <input type="text" id="currency-two-value" min="0.01" />
+        <select id="currency-two-symbol">
+          <option value="USD">USD</option>
+          <option value="EUR" selected>EUR</option>
+          <option value="JPY">JPY</option>
+          <option value="GBP">GBP</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+        </select>
+      </div>
+      <div class="conversion-rate">
+        <span id="rate-text" class="rate-text">Guaranteed rate:</span>
+        <span id="rate-value" class="rate-value"></span>
+      </div>
+      <div class="button-section">
+        <button class="swap-btn" id="swap-btn">Swap currencies</button>
+        <button class="buy-btn" id="buy-btn">Buy currencies</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

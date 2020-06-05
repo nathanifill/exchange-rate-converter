@@ -1,0 +1,255 @@
+/* CSS VARIABLES AND IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@700&display=swap');
+
+/* Color Scheme from coolors.co */
+/* https://coolors.co/717c89-8aa2a9-90baad-a1e5ab-adf6b1 */
+
+:root {
+  --color-1: #717c89;
+  --color-2: #8aa2a9;
+  --color-3: #90baad;
+  --color-4: #a1e5ab;
+  --color-5: #adf6b1;
+}
+
+/* ELEMENTS */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-2);
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+button,
+h1 {
+  text-align: center;
+}
+
+button,
+h1,
+input,
+.logo,
+.rate-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+button:focus,
+input:focus,
+select:focus {
+  outline: none;
+}
+
+button:hover {
+  filter: brightness(105%);
+}
+
+h1 {
+  margin: 1em 0 0 0;
+}
+
+h1,
+.button-section button {
+  color: white;
+}
+
+input {
+  font-size: 20px;
+  text-align: right;
+  width: 64%;
+}
+
+input,
+.button-section button,
+select {
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px;
+  margin: 2% 1%;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--color-1);
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+  background-size: 10% auto;
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  color: white;
+  cursor: pointer;
+  text-align: justify;
+  text-align-last: center;
+  width: 30%;
+}
+
+/* CLASSES */
+
+.burger-div {
+  background-color: var(--color-3);
+  height: 3px;
+  width: 23px;
+  margin: 4px 0;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  width: 100%;
+}
+
+.button-section button {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buy-btn {
+  background-color: var(--color-3);
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 1em 0;
+  max-width: 80vw;
+  min-height: 86vh;
+}
+
+.container p {
+  text-align: center;
+}
+
+.conversion-rate {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.1em;
+  height: 1.5em;
+  margin: 1em 0;
+  padding: 2em;
+  text-align: center;
+}
+
+.logo {
+  color: white;
+  font-size: 26px;
+}
+
+.logo a {
+  text-decoration: none;
+  margin: 0;
+}
+
+.logo-part-1 {
+  color: white;
+}
+
+.logo-part-2 {
+  color: var(--color-4);
+}
+
+.log-in-btn {
+  background-color: transparent;
+  border-color: var(--color-3);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  color: var(--color-3);
+  padding: 5px 10px;
+}
+
+.log-in-btn:hover {
+  background-color: var(--color-3);
+  border-color: var(--color-3);
+  color: white;
+}
+
+.navbar {
+  background-color: var(--color-1);
+  display: flex;
+  height: 14vmin;
+  justify-content: center;
+  width: 100vw;
+  margin: 0;
+  max-height: 50px;
+  padding: 0;
+}
+
+.navbar-links {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 80vw;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.swap-btn {
+  background-color: var(--color-1);
+}
+
+/* DESKTOP STYLING */
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+
+  input {
+    font-size: 25px;
+    width: 400px;
+  }
+
+  input,
+  select {
+    height: 50px;
+  }
+
+  select {
+    font-size: 20px;
+    width: 150px;
+  }
+
+  .button-section {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .button-section button {
+    font-size: 20px;
+    height: 50px;
+    width: 300px;
+    padding: 0;
+  }
+
+  .currency-one,
+  .currency-two {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
