@@ -8,7 +8,7 @@ This was a quick test at my ability to use the Fetch API and manipulate JSON obj
 ## Tech used
 HTML, CSS and JavaScript. No frameworks were harmed in the making of this project.
 
-This also uses the free Exchange Rate API. Although the free tier only allows you to use USD or EUR as your base currency, the code that I've written calculates "synthesised" rates by using the US dollar as a go between to ensure that there aren't any errors.
+This also uses the [free Exchange Rate API](https://www.exchangerate-api.com/). Although the free tier only allows you to use USD or EUR as your base currency, the code that I've written calculates "synthesised" rates by using the US dollar as a go between to ensure that there aren't any errors.
 
 For example, if you wanted to convert from GBP to EUR, it first converts from USD to GBP,= and then from USD to EUR before finally dividing the latter by the former to get the GBP to EUR rate.
 
