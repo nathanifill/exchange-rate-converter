@@ -24,7 +24,10 @@ function updateRate() {
         data['conversion_rates'][symbolOne]
       ).toFixed(4);
 
-      currencyTwoValue.value = (rate * currencyOneValue.value).toFixed(2);
+      // converts commas in larger figures to floating point numbers
+      currencyTwoValue.value = (
+        rate * parseFloat(currencyOneValue.value.replace(',', ''))
+      ).toFixed(2);
       rateValue.innerText = `1 ${symbolOne} = ${rate} ${symbolTwo}`;
     });
 }
